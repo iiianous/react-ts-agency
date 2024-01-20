@@ -53,12 +53,12 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-gray-700">
-          <div className="flex justify-center items-center flex-col lg:flex-row">
-            <div className="flex flex-items p-10">
+        <section className="bg-gray-700 py-24">
+          <div className="lg:w-5/6 lg:mx-auto flex justify-center items-center flex-col lg:flex-row">
+            <div className="w-1/2">
               <h2 className="text-4xl">Why should choose us?</h2>
             </div>
-            <div className="flex flex-items p-10">
+            <div className="w-1/2 lg:text-left py-16">
               <p>
                 Let's see what makes you have to choose us, it's all in this
                 video
@@ -66,7 +66,9 @@ function FrontPage() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <img src="https://fakeimg.pl/1400x600" alt="" />
+            <div className="w-5/6">
+              <img src="https://fakeimg.pl/1400x720" alt="" />
+            </div>
           </div>
         </section>
 
