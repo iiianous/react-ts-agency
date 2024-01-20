@@ -10,3 +10,51 @@
   text-align: center;
   height: 100vh;
 }
+
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Jost* Book"), local("Jost-Book"),
+    url(./assets/fonts/jost-VF.woff) format("woff-variations"),
+    url(./assets/fonts/jost-VF.woff2) format("woff2-variations"),
+    url(./assets/fonts/Jost-400-Book.woff) format("woff"),
+    url(./assets/fonts/Jost-400-Book.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Jost* Medium"), local("Jost-Medium"),
+    url(./assets/fonts/jost-VF.woff) format("woff-variations"),
+    url(./assets/fonts/jost-VF.woff2) format("woff2-variations"),
+    url(./assets/fonts/Jost-500-Medium.woff) format("woff"),
+    url(./assets/fonts/Jost-500-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Jost* Semi"), local("Jost-Semi"),
+    url(./assets/fonts/jost-VF.woff) format("woff-variations"),
+    url(./assets/fonts/jost-VF.woff2) format("woff2-variations"),
+    url(./assets/fonts/Jost-600-Semi.woff) format("woff"),
+    url(./assets/fonts/Jost-600-Semi.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Jost* Bold"), local("Jost-Bold"),
+    url(./assets/fonts/jost-VF.woff) format("woff-variations"),
+    url(./assets/fonts/jost-VF.woff2) format("woff2-variations"),
+    url(./assets/fonts/Jost-700-Bold.woff) format("woff"),
+    url(./assets/fonts/Jost-700-Bold.woff2) format("woff2");
+}

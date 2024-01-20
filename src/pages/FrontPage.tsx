@@ -3,52 +3,68 @@ function FrontPage() {
     <>
       <div className="h-full w-full mx-auto p-2 m-0">
         <section className="bg-gray-600">
-          <header className="flex justify-center items-center text-black p-3 text-white">
-            <div className="flex-1 font-bold tracking-wide">AGENCY</div>
-            <nav className="flex-1">
-              <ul className="flex justify-center font-bold text-white">
-                <li>
-                  <a href="#" className="inline-block p-3 font-bold text-white">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="inline-block p-3 font-bold text-white">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="inline-block p-3 font-bold text-white">
-                    Service
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="inline-block p-3 font-bold text-white">
-                    Testimonial
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div className="flex-1">
-              <button className="border-2 border-white px-7 py-2 bg-transparent font-bold hidden lg:block">
-                Contact Us
-              </button>
-            </div>
-          </header>
-          <div
-            aria-aria-label="hero"
-            className="py-32 justify-center items-center"
-          >
-            <div className="text-center">
-              <h1 className="text-7xl mb-10">
-                Make your <br />
-                Platform Perfect
-              </h1>
-              <p className="mb-6 lg:w-2/5 mx-auto text-xl">
-                we are a design studio that has completed a various projects in
-                the field of technology to perfection.
-              </p>
-              <button>Get Started</button>
+          <div className="lg:w-5/6 mx-auto">
+            <header className="flex justify-center items-center text-black p-3 text-white">
+              <div className="flex flex-1 justify-start font-bold tracking-wide">
+                AGENCY
+              </div>
+              <nav className="flex-1">
+                <ul className="flex justify-center font-bold text-white">
+                  <li>
+                    <a
+                      href="#"
+                      className="inline-block p-3 font-bold text-white"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="inline-block p-3 font-bold text-white"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="inline-block p-3 font-bold text-white"
+                    >
+                      Service
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="inline-block p-3 font-bold text-white"
+                    >
+                      Testimonial
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div className="flex flex-1 justify-end">
+                <button className="border-2 border-white px-7 py-2 bg-transparent font-bold hidden lg:block">
+                  Contact Us
+                </button>
+              </div>
+            </header>
+            <div
+              aria-aria-label="hero"
+              className="py-32 justify-center items-center"
+            >
+              <div className="text-center">
+                <h1 className="text-8xl font-bold mb-10">
+                  Make your <br />
+                  Platform Perfect
+                </h1>
+                <p className="mb-6 lg:w-2/5 mx-auto text-xl">
+                  we are a design studio that has completed a various projects
+                  in the field of technology to perfection.
+                </p>
+                <button>Get Started</button>
+              </div>
             </div>
           </div>
         </section>
@@ -170,7 +186,7 @@ function FrontPage() {
                 />
                 <p className="font-bold">Mr. Mostar</p>
                 <p className="text-sm mb-6">Retail Company</p>
-                <p className="text-gray-600">
+                <p className="text-gray-400">
                   "Than you for realizing the idea and highly recommended it for
                   those of you who want to create a system."
                 </p>
@@ -200,34 +216,38 @@ function FrontPage() {
           </div>
         </section>
 
-        <footer className="bg-gray-700 flex justify-center flex-col lg:flex-row text-center lg:text-left">
-          <div className="flex-item p-4 px-6">Agency</div>
-          <div className="flex flex-item items-center justify-center">
-            <ul className="flex m-0 p-0 text-center">
-              <li className="flex-item">
-                <a href="#" className="inline-block p-4 px-6">
-                  Home
-                </a>
-              </li>
-              <li className="flex-item">
-                <a href="#" className="inline-block p-4 px-6">
-                  About
-                </a>
-              </li>
-              <li className="flex-item">
-                <a href="#" className="inline-block p-4 px-6">
-                  Service
-                </a>
-              </li>
-              <li className="flex-item">
-                <a href="#" className="inline-block p-4 px-6">
-                  Testimonial
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="flex-item p-4 px-6">
-            2020 Agency, All Rights Reserved.
+        <footer className="bg-gray-700">
+          <div className="lg:w-5/6 lg:mx-auto flex flex-col lg:flex-row">
+            <div className="flex-1 p-4 px-6 lg:text-left text-center">
+              Agency
+            </div>
+            <div className="flex-1 flex items-center justify-center">
+              <ul className="flex m-0 p-0 text-center">
+                <li className="flex-item">
+                  <a href="#" className="inline-block p-4 px-6">
+                    Home
+                  </a>
+                </li>
+                <li className="flex-item">
+                  <a href="#" className="inline-block p-4 px-6">
+                    About
+                  </a>
+                </li>
+                <li className="flex-item">
+                  <a href="#" className="inline-block p-4 px-6">
+                    Service
+                  </a>
+                </li>
+                <li className="flex-item">
+                  <a href="#" className="inline-block p-4 px-6">
+                    Testimonial
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="flex-1 p-4 px-6 lg:text-right text-center">
+              © 2020 Agency, All Rights Reserved.
+            </div>
           </div>
         </footer>
       </div>
