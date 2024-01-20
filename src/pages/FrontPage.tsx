@@ -2,7 +2,7 @@ function FrontPage() {
   return (
     <>
       <div className="h-full w-full mx-auto p-2 m-0">
-        <section className="bg-gray-800 h-3/4">
+        <section className="bg-gray-800">
           <header className="flex justify-center items-center text-black p-3 text-white">
             <div className="flex-1 font-bold tracking-wide">AGENCY</div>
             <nav className="flex-1">
@@ -37,7 +37,7 @@ function FrontPage() {
           </header>
           <div
             aria-aria-label="hero"
-            className="py-24 justify-center items-center"
+            className="py-28 justify-center items-center"
           >
             <div className="text-center">
               <h1 className="text-7xl mb-10">
@@ -55,10 +55,10 @@ function FrontPage() {
 
         <section className="bg-gray-700 py-24">
           <div className="lg:w-5/6 lg:mx-auto flex justify-center items-center flex-col lg:flex-row">
-            <div className="w-1/2">
+            <div className="w-1/2 pb-16">
               <h2 className="text-4xl">Why should choose us?</h2>
             </div>
-            <div className="w-1/2 lg:text-left py-16">
+            <div className="w-1/2 lg:text-left pb-16">
               <p>
                 Let's see what makes you have to choose us, it's all in this
                 video
@@ -72,8 +72,8 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-gray-800">
-          <div className="flex justify-center items-center flex-col lg:flex-row">
+        <section className="bg-gray-800 py-24">
+          <div className="lg:w-5/6 lg:mx-auto flex justify-center items-start flex-col lg:flex-row">
             <div className="lg:w-1/2 flex-items p-10 text-left">
               <h2 className="text-4xl mb-10">What services do we offer?</h2>
               <p className="mb-10">
@@ -85,7 +85,7 @@ function FrontPage() {
               </a>
             </div>
             <div className="lg:w-1/2 flex flex-items p-10 flex-wrap">
-              <div className="text-left w-1/2 mb-10">
+              <div className="text-left w-1/2 mb-16  lg:pl-10">
                 <img className="mb-5" src="https://fakeimg.pl/50x50" alt="" />
                 <h3 className="mb-4">Content Strategry</h3>
                 <p>
@@ -93,7 +93,7 @@ function FrontPage() {
                   content strategy.
                 </p>
               </div>
-              <div className="text-left w-1/2 mb-10">
+              <div className="text-left w-1/2 mb-16  lg:pl-10">
                 <img className="mb-5" src="https://fakeimg.pl/50x50" alt="" />
                 <h3 className="mb-4">Content Strategry</h3>
                 <p>
@@ -101,7 +101,7 @@ function FrontPage() {
                   content strategy.
                 </p>
               </div>
-              <div className="text-left w-1/2 mb-10">
+              <div className="text-left w-1/2 mb-16  lg:pl-10">
                 <img className="mb-5" src="https://fakeimg.pl/50x50" alt="" />
                 <h3 className="mb-4">Content Strategry</h3>
                 <p>
@@ -109,7 +109,7 @@ function FrontPage() {
                   content strategy.
                 </p>
               </div>
-              <div className="text-left w-1/2 mb-10">
+              <div className="text-left w-1/2 mb-16  lg:pl-10">
                 <img className="mb-5" src="https://fakeimg.pl/50x50" alt="" />
                 <h3 className="mb-4">Content Strategry</h3>
                 <p>
