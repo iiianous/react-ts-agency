@@ -1,23 +1,50 @@
 function FrontPage() {
   return (
     <>
-      <div className="h-full w-5/6 mx-auto p-2 m-0">
-        <section className="bg-gray-800 h-4/5">
+      <div className="h-full w-full mx-auto p-2 m-0">
+        <section className="bg-gray-800 h-3/4">
           <header className="flex justify-center items-center text-black p-3 text-white">
-            <div className="flex-1">AGENCY</div>
-            <div className="flex-1">Links</div>
-            <div className="flex-1">CTA</div>
+            <div className="flex-1 font-bold tracking-wide">AGENCY</div>
+            <nav className="flex-1">
+              <ul className="flex justify-center font-bold text-white">
+                <li>
+                  <a href="#" className="inline-block p-3 font-bold text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="inline-block p-3 font-bold text-white">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="inline-block p-3 font-bold text-white">
+                    Service
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="inline-block p-3 font-bold text-white">
+                    Testimonial
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div className="flex-1">
+              <button className="border-2 border-white px-7 py-2 bg-transparent font-bold">
+                Contact Us
+              </button>
+            </div>
           </header>
           <div
             aria-aria-label="hero"
             className="py-24 justify-center items-center"
           >
             <div className="text-center">
-              <h1 className="text-8xl mb-10">
+              <h1 className="text-7xl mb-10">
                 Make your <br />
                 Platform Perfect
               </h1>
-              <p className="mb-6">
+              <p className="mb-6 lg:w-2/5 mx-auto text-xl">
                 we are a design studio that has completed a various projects in
                 the field of technology to perfection.
               </p>
@@ -28,10 +55,10 @@ function FrontPage() {
 
         <section className="bg-gray-700">
           <div className="flex justify-center items-center flex-col lg:flex-row">
-            <div className="flex-items p-10">
+            <div className="flex flex-items p-10">
               <h2 className="text-4xl">Why should choose us?</h2>
             </div>
-            <div className="flex-items p-10">
+            <div className="flex flex-items p-10">
               <p>
                 Let's see what makes you have to choose us, it's all in this
                 video
