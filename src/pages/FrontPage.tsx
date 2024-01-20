@@ -37,7 +37,7 @@ function FrontPage() {
           </header>
           <div
             aria-aria-label="hero"
-            className="py-28 justify-center items-center"
+            className="py-32 justify-center items-center"
           >
             <div className="text-center">
               <h1 className="text-7xl mb-10">
@@ -121,13 +121,13 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="my-10">
-          <div className="py-12">
+        <section className="my-10 py-24">
+          <div className="pb-12">
             <p className="mb-10">Testimonials</p>
             <h3 className="text-3xl">Our Client Reviews</h3>
           </div>
-          <div className="flex flex-wrap">
-            <div className="lg:w-1/3 mb-6 items-center justify-center">
+          <div className="lg:w-5/6 mx-auto flex flex-wrap">
+            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center">
               <div className="p-8 text-center mx-2 bg-gray-700">
                 <img
                   className="rounded-full text-center inline-block mb-4"
@@ -142,7 +142,7 @@ function FrontPage() {
                 </p>
               </div>
             </div>
-            <div className="lg:w-1/3 mb-6 items-center justify-center">
+            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center">
               <div className="p-8 text-center mx-2 bg-gray-700">
                 <img
                   className="rounded-full text-center inline-block mb-4"
@@ -157,7 +157,7 @@ function FrontPage() {
                 </p>
               </div>
             </div>
-            <div className="lg:w-1/3 mb-6 items-center justify-center">
+            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center">
               <div className="p-8 text-center mx-2 bg-gray-700">
                 <img
                   className="rounded-full text-center inline-block mb-4"
