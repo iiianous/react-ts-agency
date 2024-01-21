@@ -9,6 +9,11 @@ import iconFooterRing1 from "../assets/images/icon-footer-ring-1.png";
 import iconFooterRing2 from "../assets/images/icon-footer-ring-2.png";
 import iconPlus from "../assets/images/icon-plus.png";
 
+import iconHeroZigzag from "../assets/images/icon-hero-zigzag.png";
+import iconHeroRing from "../assets/images/icon-hero-ring.png";
+import iconHeroPyramid from "../assets/images/icon-hero-pyramid.png";
+import iconHeroAdd from "../assets/images/icon-hero-add.png";
+
 function FrontPage() {
   return (
     <>
@@ -68,12 +73,12 @@ function FrontPage() {
               aria-aria-label="hero"
               className="py-32 justify-center items-center"
             >
-              <div className="text-center">
-                <h1 className="text-7xl font-bold mb-10 text-white">
+              <div className="text-center relative">
+                <h1 className="text-5xl lg:text-7xl font-bold mb-10 text-white">
                   Make your <br />
                   <span style={{ color: "#96ceb4" }}>Platform</span> Perfect
                 </h1>
-                <p className="mb-6 lg:w-2/5 mx-auto text-2xl mb-14">
+                <p className="mb-6 lg:w-1/2 mx-auto text-2xl mb-14">
                   we are a design studio that has completed a various projects
                   in the field of technology to perfection.
                 </p>
@@ -83,19 +88,38 @@ function FrontPage() {
                 >
                   Get Started
                 </button>
+                <div
+                  style={{
+                    width: "95px",
+                  }}
+                  className="absolute z-10 -right-24 -bottom-16"
+                >
+                  <img src={iconPlus} alt="Icon" />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
+        {/* <section className="bg-black-900 py-72">
+          <div
+            style={{
+              // background: "rgb(255,173,97)",
+              background:
+                "radial-gradient(circle, rgba(255,173,97,1) 0%, rgba(29,27,27,1) 100%)",
+            }}
+          ></div>
+          <h1 className="text-8xl">Testing</h1>
+        </section> */}
+
         <section className="bg-black-900 py-12">
           <div className="lg:w-5/6 lg:mx-auto flex justify-center items-center flex-col lg:flex-row">
-            <div className="w-1/2 pb-16">
+            <div className="lg:w-1/2 pb-16">
               <h2 className="text-4xl lg:text-left font-bold">
                 Why should choose us?
               </h2>
             </div>
-            <div className="w-1/2 lg:text-left pb-16">
+            <div className="lg:w-1/2 lg:text-left pb-16">
               <p className="lg:w-1/2 ml-auto">
                 Let's see what makes you have to choose us, it's all in this
                 video
@@ -113,7 +137,7 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-black-900 py-12">
+        <section className="bg-black-900 py-6">
           <div className="lg:w-5/6 lg:mx-auto flex justify-center items-start flex-col lg:flex-row">
             <div className="lg:w-1/2 flex-items p-10 text-left">
               <h2 className="text-4xl font-bold mb-10 lg:text-left text-white">
@@ -172,7 +196,7 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-black-900 py-12">
+        <section className="bg-black-900 py-6">
           <div className="pb-6">
             <p
               style={{ color: "#FFAD60", letterSpacing: "3px" }}
@@ -261,7 +285,7 @@ function FrontPage() {
             >
               <img width="62" src={iconFooterRing} alt="Icon" />
             </div>
-            <div className="-top-2 -right-2 absolute">
+            <div className="-top-2 -right-2 absolute z-20">
               <img width="45" src={iconSend} alt="Icon" />
             </div>
             <div
