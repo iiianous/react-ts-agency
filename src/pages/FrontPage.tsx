@@ -1,8 +1,13 @@
+import iconSquare from "../assets/images/icon-square.png";
+import iconGlass from "../assets/images/icon-glass.png";
+import iconPyramid from "../assets/images/icon-pyramid.png";
+import iconWoolBall from "../assets/images/icon-wool-ball.png";
+
 function FrontPage() {
   return (
     <>
       <div className="h-full w-full mx-auto p-2 m-0">
-        <section className="bg-gray-600">
+        <section className="bg-black-900">
           <div className="lg:w-5/6 mx-auto">
             <header className="flex justify-center items-center text-black p-3 text-white">
               <div className="flex flex-1 justify-start font-bold tracking-wide">
@@ -45,7 +50,10 @@ function FrontPage() {
                 </ul>
               </nav>
               <div className="flex flex-1 justify-end">
-                <button className="border-2 border-white px-7 py-2 bg-transparent font-bold hidden lg:block">
+                <button
+                  style={{ border: "2px solid #8e643e", color: "#8e643e" }}
+                  className="px-7 py-2 bg-transparent font-bold hidden lg:block"
+                >
                   Contact Us
                 </button>
               </div>
@@ -55,27 +63,34 @@ function FrontPage() {
               className="py-32 justify-center items-center"
             >
               <div className="text-center">
-                <h1 className="text-8xl font-bold mb-10">
+                <h1 className="text-7xl font-bold mb-10 text-white">
                   Make your <br />
-                  Platform Perfect
+                  <span style={{ color: "#96ceb4" }}>Platform</span> Perfect
                 </h1>
-                <p className="mb-6 lg:w-2/5 mx-auto text-xl">
+                <p className="mb-6 lg:w-2/5 mx-auto text-2xl mb-14">
                   we are a design studio that has completed a various projects
                   in the field of technology to perfection.
                 </p>
-                <button>Get Started</button>
+                <button
+                  style={{ backgroundColor: "#4c40f7", color: "#fff" }}
+                  className="px-7 py-2 font-bold"
+                >
+                  Get Started
+                </button>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="bg-gray-700 py-24">
+        <section className="bg-black-900 py-12">
           <div className="lg:w-5/6 lg:mx-auto flex justify-center items-center flex-col lg:flex-row">
             <div className="w-1/2 pb-16">
-              <h2 className="text-4xl">Why should choose us?</h2>
+              <h2 className="text-4xl lg:text-left font-bold">
+                Why should choose us?
+              </h2>
             </div>
             <div className="w-1/2 lg:text-left pb-16">
-              <p>
+              <p className="lg:w-1/2 ml-auto">
                 Let's see what makes you have to choose us, it's all in this
                 video
               </p>
@@ -84,7 +99,7 @@ function FrontPage() {
           <div className="flex items-center justify-center">
             <div className="w-5/6">
               <img
-                className="inline-block"
+                className="inline-block rounded-md"
                 src="https://fakeimg.pl/1400x720"
                 alt=""
               />
@@ -92,10 +107,12 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-gray-600 py-24">
+        <section className="bg-black-900 py-12">
           <div className="lg:w-5/6 lg:mx-auto flex justify-center items-start flex-col lg:flex-row">
             <div className="lg:w-1/2 flex-items p-10 text-left">
-              <h2 className="text-4xl mb-10">What services do we offer?</h2>
+              <h2 className="text-4xl font-bold mb-10 lg:text-left text-white">
+                What services do we offer?
+              </h2>
               <p className="mb-10">
                 These are some of the services that you will get if you
                 cooperate with us, of course ther are many more.
@@ -106,32 +123,40 @@ function FrontPage() {
             </div>
             <div className="lg:w-1/2 flex flex-items p-10 flex-wrap">
               <div className="text-left w-1/2 mb-16  lg:pl-10">
-                <img className="mb-5" src="https://fakeimg.pl/50x50" alt="" />
-                <h3 className="mb-4">Content Strategry</h3>
+                <img className="mb-5" src={iconSquare} alt="" />
+                <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
+                  Content Strategry
+                </h3>
                 <p>
                   All our content marketing service packages include a custom
                   content strategy.
                 </p>
               </div>
               <div className="text-left w-1/2 mb-16  lg:pl-10">
-                <img className="mb-5" src="https://fakeimg.pl/50x50" alt="" />
-                <h3 className="mb-4">Content Strategry</h3>
+                <img className="mb-5" src={iconPyramid} alt="" />
+                <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
+                  Content Strategry
+                </h3>
                 <p>
                   All our content marketing service packages include a custom
                   content strategy.
                 </p>
               </div>
               <div className="text-left w-1/2 mb-16  lg:pl-10">
-                <img className="mb-5" src="https://fakeimg.pl/50x50" alt="" />
-                <h3 className="mb-4">Content Strategry</h3>
+                <img className="mb-5" src={iconWoolBall} alt="" />
+                <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
+                  Content Strategry
+                </h3>
                 <p>
                   All our content marketing service packages include a custom
                   content strategy.
                 </p>
               </div>
               <div className="text-left w-1/2 mb-16  lg:pl-10">
-                <img className="mb-5" src="https://fakeimg.pl/50x50" alt="" />
-                <h3 className="mb-4">Content Strategry</h3>
+                <img className="mb-5" src={iconGlass} alt="" />
+                <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
+                  Content Strategry
+                </h3>
                 <p>
                   All our content marketing service packages include a custom
                   content strategy.
@@ -141,51 +166,73 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-gray-700 py-24">
-          <div className="pb-12">
-            <p className="mb-10">Testimonials</p>
-            <h3 className="text-3xl">Our Client Reviews</h3>
+        <section className="bg-black-900 py-12">
+          <div className="pb-6">
+            <p
+              style={{ color: "#FFAD60" }}
+              className="mb-10 uppercase tracking-widest"
+            >
+              Testimonials
+            </p>
+            <h3 className="text-3xl text-white font-bold mb-6">
+              Our Client Reviews
+            </h3>
           </div>
           <div className="lg:w-5/6 mx-auto flex flex-wrap">
-            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center">
-              <div className="p-8 text-center mx-2 bg-gray-600">
+            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center relative">
+              <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
                 <img
-                  className="rounded-full text-center inline-block mb-4"
+                  className="rounded-full text-center inline-block"
                   src="https://fakeimg.pl/40x40"
                   alt=""
                 />
-                <p className="font-bold">Mr. Mostar</p>
-                <p className="text-sm mb-6">Retail Company</p>
+              </div>
+              <div
+                style={{ borderRadius: "15px" }}
+                className="p-8 text-center mx-2 bg-white mx-6 relative"
+              >
+                <p className="font-bold text-gray-900">Mr. Mostar</p>
+                <p className="text-sm mb-6 text-gray-400">Retail Company</p>
                 <p className="text-gray-400">
                   "Than you for realizing the idea and highly recommended it for
                   those of you who want to create a system."
                 </p>
               </div>
             </div>
-            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center">
-              <div className="p-8 text-center mx-2 bg-gray-600">
+            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center relative">
+              <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
                 <img
-                  className="rounded-full text-center inline-block mb-4"
+                  className="rounded-full text-center inline-block"
                   src="https://fakeimg.pl/40x40"
                   alt=""
                 />
-                <p className="font-bold">Mr. Mostar</p>
-                <p className="text-sm mb-6">Retail Company</p>
+              </div>
+              <div
+                style={{ borderRadius: "15px" }}
+                className="p-8 text-center mx-2 bg-white mx-6 relative"
+              >
+                <p className="font-bold text-gray-900">Mr. Mostar</p>
+                <p className="text-sm mb-6 text-gray-400">Retail Company</p>
                 <p className="text-gray-400">
                   "Than you for realizing the idea and highly recommended it for
                   those of you who want to create a system."
                 </p>
               </div>
             </div>
-            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center">
-              <div className="p-8 text-center mx-2 bg-gray-600">
+            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center relative">
+              <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
                 <img
-                  className="rounded-full text-center inline-block mb-4"
+                  className="rounded-full text-center inline-block"
                   src="https://fakeimg.pl/40x40"
                   alt=""
                 />
-                <p className="font-bold">Mr. Mostar</p>
-                <p className="text-sm mb-6">Retail Company</p>
+              </div>
+              <div
+                style={{ borderRadius: "15px" }}
+                className="p-8 text-center mx-2 bg-white mx-6 relative"
+              >
+                <p className="font-bold text-gray-900">Mr. Mostar</p>
+                <p className="text-sm mb-6 text-gray-400">Retail Company</p>
                 <p className="text-gray-400">
                   "Than you for realizing the idea and highly recommended it for
                   those of you who want to create a system."
