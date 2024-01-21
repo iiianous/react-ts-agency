@@ -7,6 +7,7 @@ import iconSend from "../assets/images/icon-send.png";
 import iconFooterRing from "../assets/images/icon-footer-ring.png";
 import iconFooterRing1 from "../assets/images/icon-footer-ring-1.png";
 import iconFooterRing2 from "../assets/images/icon-footer-ring-2.png";
+import iconPlus from "../assets/images/icon-plus.png";
 
 function FrontPage() {
   return (
@@ -174,7 +175,7 @@ function FrontPage() {
         <section className="bg-black-900 py-12">
           <div className="pb-6">
             <p
-              style={{ color: "#FFAD60" }}
+              style={{ color: "#FFAD60", letterSpacing: "3px" }}
               className="mb-10 uppercase tracking-widest"
             >
               Testimonials
@@ -198,7 +199,7 @@ function FrontPage() {
               >
                 <p className="font-bold text-gray-900">Mr. Mostar</p>
                 <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                <p className="text-gray-400">
+                <p className="text-gray-700">
                   "Than you for realizing the idea and highly recommended it for
                   those of you who want to create a system."
                 </p>
@@ -218,7 +219,7 @@ function FrontPage() {
               >
                 <p className="font-bold text-gray-900">Mr. Mostar</p>
                 <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                <p className="text-gray-400">
+                <p className="text-gray-700">
                   "Than you for realizing the idea and highly recommended it for
                   those of you who want to create a system."
                 </p>
@@ -238,7 +239,7 @@ function FrontPage() {
               >
                 <p className="font-bold text-gray-900">Mr. Mostar</p>
                 <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                <p className="text-gray-400">
+                <p className="text-gray-700">
                   "Than you for realizing the idea and highly recommended it for
                   those of you who want to create a system."
                 </p>
@@ -247,16 +248,37 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-black-900 flex flex-col items-center py-48">
+        <section className="bg-black-900 flex flex-col items-center py-12">
           <div
             style={{ borderTopLeftRadius: "105px" }}
             className="lg:w-5/6 lg:mx-auto bg-white text-black py-24 rounded-lg relative"
           >
-            <div className="-top-3 -left-2 absolute">
-              <img width="45" src={iconFooterRing} alt="Icon" />
+            <div
+              style={{
+                width: "62",
+              }}
+              className="-top-4 -left-10 absolute"
+            >
+              <img width="62" src={iconFooterRing} alt="Icon" />
             </div>
             <div className="-top-2 -right-2 absolute">
               <img width="45" src={iconSend} alt="Icon" />
+            </div>
+            <div
+              style={{
+                width: "288px",
+              }}
+              className="absolute -top-4 -right-24 opacity-20 z-10"
+            >
+              <img src={iconFooterRing2} alt="Icon" />
+            </div>
+            <div
+              style={{
+                width: "153px",
+              }}
+              className="absolute z-10 -right-24 -bottom-16"
+            >
+              <img src={iconPlus} alt="Icon" />
             </div>
             <div className="flex-item">
               <h3 className="text-3xl mb-10 w-1/2 mx-auto font-bold">
@@ -295,8 +317,8 @@ function FrontPage() {
           </div>
         </section>
 
-        <footer className="bg-gray-700">
-          <div className="lg:w-5/6 lg:mx-auto flex flex-col lg:flex-row">
+        <footer className="bg-black-900">
+          <div className=" flex flex-col lg:w-5/6 lg:mx-auto lg:flex-row py-12">
             <div className="flex-1 p-4 px-6 lg:text-left text-center">
               Agency
             </div>
