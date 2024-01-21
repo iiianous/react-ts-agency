@@ -3,6 +3,11 @@ import iconGlass from "../assets/images/icon-glass.png";
 import iconPyramid from "../assets/images/icon-pyramid.png";
 import iconWoolBall from "../assets/images/icon-wool-ball.png";
 
+import iconSend from "../assets/images/icon-send.png";
+import iconFooterRing from "../assets/images/icon-footer-ring.png";
+import iconFooterRing1 from "../assets/images/icon-footer-ring-1.png";
+import iconFooterRing2 from "../assets/images/icon-footer-ring-2.png";
+
 function FrontPage() {
   return (
     <>
@@ -242,23 +247,50 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-gray-600 flex flex-col items-center py-48">
-          <div className="flex-item">
-            <h3 className="text-4xl mb-7">
-              Subscribe to get information, latest news and other interesting
-              offers about the agency
-            </h3>
-          </div>
-          <div className="flex flex-item flex-col lg:flex-row">
-            <div className="flex-item">
-              <input
-                type="text"
-                className="p-3 px-5"
-                placeholder="Your Email"
-              />
+        <section className="bg-black-900 flex flex-col items-center py-48">
+          <div
+            style={{ borderTopLeftRadius: "105px" }}
+            className="lg:w-5/6 lg:mx-auto bg-white text-black py-24 rounded-lg relative"
+          >
+            <div className="-top-3 -left-2 absolute">
+              <img width="45" src={iconFooterRing} alt="Icon" />
             </div>
-            <div className="flex-item lg:pl-6">
-              <button className="p-3 px-5">Subscribe</button>
+            <div className="-top-2 -right-2 absolute">
+              <img width="45" src={iconSend} alt="Icon" />
+            </div>
+            <div className="flex-item">
+              <h3 className="text-3xl mb-10 w-1/2 mx-auto font-bold">
+                Subscribe to get information, latest news and other interesting
+                offers about the agency
+              </h3>
+            </div>
+            <div className="relative z-10 flex flex-item flex-col lg:flex-row lg:justify-center lg:items-center">
+              <div className="flex-item relative">
+                <div
+                  style={{
+                    width: "389px",
+                  }}
+                  className="absolute -bottom-24 -left-72 opacity-20 -z-10"
+                >
+                  <img src={iconFooterRing1} alt="Icon" />
+                </div>
+                <input
+                  type="text"
+                  className="p-4 px-5 border-2 border-slate-600 bg-white rounded-md z-10 relative w-80"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div className="flex-item lg:pl-6">
+                <button
+                  style={{
+                    color: "#fff",
+                    backgroundColor: "#ffad61",
+                  }}
+                  className="px-7 py-4 bg-transparent font-bold"
+                >
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </section>
