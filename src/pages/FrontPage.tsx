@@ -71,7 +71,7 @@ function FrontPage() {
             </header>
             <div
               aria-aria-label="hero"
-              className="py-32 justify-center items-center"
+              className="py-32 justify-center items-center relative"
             >
               <div className="text-center relative">
                 <h1 className="text-5xl lg:text-7xl font-bold mb-10 text-white">
@@ -88,13 +88,18 @@ function FrontPage() {
                 >
                   Get Started
                 </button>
-                <div
-                  style={{
-                    width: "95px",
-                  }}
-                  className="absolute z-10 -right-24 -bottom-16"
-                >
-                  <img src={iconPlus} alt="Icon" />
+
+                <div className="absolute z-10 left-2 lg:left-16 -top-2 max-w-[65px] lg:max-w-[95px]">
+                  <img src={iconHeroZigzag} alt="Icon" />
+                </div>
+                <div className="absolute z-10 -right-2 -top-12 lg:-top-2 max-w-[65px] lg:max-w-[105px]">
+                  <img src={iconHeroPyramid} alt="Icon" />
+                </div>
+                <div className="absolute z-10 left-16 md:left-24 lg:left-48 -bottom-2 max-w-[30px] lg:max-w-[51px]">
+                  <img src={iconHeroRing} alt="Icon" />
+                </div>
+                <div className="absolute z-10 right-12 lg:-right-2 md:bottom-4 lg:-bottom-2 max-w-[55px] lg:max-w-[105px]">
+                  <img src={iconHeroAdd} alt="Icon" />
                 </div>
               </div>
             </div>
