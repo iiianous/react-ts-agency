@@ -30,7 +30,6 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 Todos:
-
-- React Testing Library
-- React Route v6
-- react-i18n
+[ ] React Testing Library
+[ ] Setup React Route v6
+[ ] Implement react-i18n
