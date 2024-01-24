@@ -15,6 +15,7 @@ import iconHeroPyramid from "../assets/images/icon-hero-pyramid.png";
 import iconHeroAdd from "../assets/images/icon-hero-add.png";
 
 import iconHeroHamburgerMenu from "../assets/images/icon-hamburger-menu.svg";
+import iconReviewArrow from "../assets/images/icon-arrow.svg";
 
 function FrontPage() {
   return (
@@ -70,7 +71,12 @@ function FrontPage() {
                   Contact Us
                 </button>
                 <a href="#" className="lg:hidden">
-                  <img width="50" className="text-black" src={iconHeroHamburgerMenu} alt="Menu" />
+                  <img
+                    width="50"
+                    className="text-black"
+                    src={iconHeroHamburgerMenu}
+                    alt="Menu"
+                  />
                 </a>
               </div>
             </header>
@@ -218,65 +224,87 @@ function FrontPage() {
               Our Client Reviews
             </h3>
           </div>
-          <div className="lg:w-5/6 mx-auto flex flex-wrap">
-            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center relative">
-              <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
+          <div className="lg:w-5/6 mx-auto flex">
+            <div className="flex justify-center items-center">
+              <div className="w-[50px] h-[50px] cursor-pointer top-4 relative">
                 <img
-                  className="rounded-full text-center inline-block"
-                  src="https://fakeimg.pl/40x40"
-                  alt=""
+                  className="rounded-full bg-white p-2"
+                  width="40"
+                  src={iconReviewArrow}
+                  alt="Previous"
                 />
-              </div>
-              <div
-                style={{ borderRadius: "15px" }}
-                className="p-8 text-center mx-2 bg-white mx-6 relative"
-              >
-                <p className="font-bold text-gray-900">Mr. Mostar</p>
-                <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                <p className="text-gray-700">
-                  "Than you for realizing the idea and highly recommended it for
-                  those of you who want to create a system."
-                </p>
               </div>
             </div>
-            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center relative">
-              <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
-                <img
-                  className="rounded-full text-center inline-block"
-                  src="https://fakeimg.pl/40x40"
-                  alt=""
-                />
+            <div className="flex flex-1 flex-col lg:flex-row">
+              <div className="lg:w-1/3 mb-2 lg:mb-6 items-center justify-center relative">
+                <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
+                  <img
+                    className="rounded-full text-center inline-block"
+                    src="https://fakeimg.pl/40x40"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style={{ borderRadius: "15px" }}
+                  className="p-8 text-center mx-2 bg-white mx-6 relative"
+                >
+                  <p className="font-bold text-gray-900">Mr. Mostar</p>
+                  <p className="text-sm mb-6 text-gray-400">Retail Company</p>
+                  <p className="text-gray-700">
+                    "Than you for realizing the idea and highly recommended it
+                    for those of you who want to create a system."
+                  </p>
+                </div>
               </div>
-              <div
-                style={{ borderRadius: "15px" }}
-                className="p-8 text-center mx-2 bg-white mx-6 relative"
-              >
-                <p className="font-bold text-gray-900">Mr. Mostar</p>
-                <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                <p className="text-gray-700">
-                  "Than you for realizing the idea and highly recommended it for
-                  those of you who want to create a system."
-                </p>
+              <div className="lg:w-1/3 mb-2 lg:mb-6 items-center justify-center relative">
+                <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
+                  <img
+                    className="rounded-full text-center inline-block"
+                    src="https://fakeimg.pl/40x40"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style={{ borderRadius: "15px" }}
+                  className="p-8 text-center mx-2 bg-white mx-6 relative"
+                >
+                  <p className="font-bold text-gray-900">Mr. Mostar</p>
+                  <p className="text-sm mb-6 text-gray-400">Retail Company</p>
+                  <p className="text-gray-700">
+                    "Than you for realizing the idea and highly recommended it
+                    for those of you who want to create a system."
+                  </p>
+                </div>
+              </div>
+              <div className="lg:w-1/3 mb-2 lg:mb-6 items-center justify-center relative">
+                <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
+                  <img
+                    className="rounded-full text-center inline-block"
+                    src="https://fakeimg.pl/40x40"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style={{ borderRadius: "15px" }}
+                  className="p-8 text-center mx-2 bg-white mx-6 relative"
+                >
+                  <p className="font-bold text-gray-900">Mr. Mostar</p>
+                  <p className="text-sm mb-6 text-gray-400">Retail Company</p>
+                  <p className="text-gray-700">
+                    "Than you for realizing the idea and highly recommended it
+                    for those of you who want to create a system."
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="lg:w-1/3 md:w-1/3 mb-6 items-center justify-center relative">
-              <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
+            <div className="flex justify-center items-center">
+              <div className="w-[50px] h-[50px] cursor-pointer top-4 relative">
                 <img
-                  className="rounded-full text-center inline-block"
-                  src="https://fakeimg.pl/40x40"
-                  alt=""
+                  className="rounded-full bg-white p-2 relative rotate-180"
+                  width="40"
+                  src={iconReviewArrow}
+                  alt="Next"
                 />
-              </div>
-              <div
-                style={{ borderRadius: "15px" }}
-                className="p-8 text-center mx-2 bg-white mx-6 relative"
-              >
-                <p className="font-bold text-gray-900">Mr. Mostar</p>
-                <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                <p className="text-gray-700">
-                  "Than you for realizing the idea and highly recommended it for
-                  those of you who want to create a system."
-                </p>
               </div>
             </div>
           </div>
