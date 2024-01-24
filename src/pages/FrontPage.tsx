@@ -14,6 +14,8 @@ import iconHeroRing from "../assets/images/icon-hero-ring.png";
 import iconHeroPyramid from "../assets/images/icon-hero-pyramid.png";
 import iconHeroAdd from "../assets/images/icon-hero-add.png";
 
+import iconHeroHamburgerMenu from "../assets/images/icon-hamburger-menu.svg";
+
 function FrontPage() {
   return (
     <>
@@ -24,7 +26,7 @@ function FrontPage() {
               <div className="flex flex-1 justify-start font-bold tracking-wide">
                 AGENCY
               </div>
-              <nav className="flex-1">
+              <nav className="flex-1 hidden lg:block">
                 <ul className="flex justify-center font-bold text-white">
                   <li>
                     <a
@@ -67,6 +69,9 @@ function FrontPage() {
                 >
                   Contact Us
                 </button>
+                <a href="#" className="lg:hidden">
+                  <img width="50" className="text-black" src={iconHeroHamburgerMenu} alt="Menu" />
+                </a>
               </div>
             </header>
             <div
@@ -78,7 +83,7 @@ function FrontPage() {
                   Make your <br />
                   <span style={{ color: "#96ceb4" }}>Platform</span> Perfect
                 </h1>
-                <p className="mb-6 lg:w-1/2 mx-auto text-2xl mb-14">
+                <p className="mb-6 lg:w-1/2 mx-auto text-2xl mb-14 text-white">
                   we are a design studio that has completed a various projects
                   in the field of technology to perfection.
                 </p>
@@ -157,7 +162,7 @@ function FrontPage() {
               </a>
             </div>
             <div className="lg:w-1/2 flex flex-items p-10 flex-wrap">
-              <div className="text-left w-1/2 mb-16  lg:pl-10">
+              <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
                 <img className="mb-5" src={iconSquare} alt="" />
                 <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
                   Content Strategry
@@ -167,7 +172,7 @@ function FrontPage() {
                   content strategy.
                 </p>
               </div>
-              <div className="text-left w-1/2 mb-16  lg:pl-10">
+              <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
                 <img className="mb-5" src={iconPyramid} alt="" />
                 <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
                   Content Strategry
@@ -177,7 +182,7 @@ function FrontPage() {
                   content strategy.
                 </p>
               </div>
-              <div className="text-left w-1/2 mb-16  lg:pl-10">
+              <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
                 <img className="mb-5" src={iconWoolBall} alt="" />
                 <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
                   Content Strategry
@@ -187,7 +192,7 @@ function FrontPage() {
                   content strategy.
                 </p>
               </div>
-              <div className="text-left w-1/2 mb-16  lg:pl-10">
+              <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
                 <img className="mb-5" src={iconGlass} alt="" />
                 <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
                   Content Strategry
