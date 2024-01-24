@@ -18,6 +18,7 @@ import iconHeroAdd from "../assets/images/icon-hero-add.png";
 
 import iconHeroHamburgerMenu from "../assets/images/icon-hamburger-menu.svg";
 import iconReviewArrow from "../assets/images/icon-arrow.svg";
+import iconSubscritEnvelope from "../assets/images/icon-envelope.svg";
 
 function FrontPage() {
   return (
@@ -360,11 +361,18 @@ function FrontPage() {
                 >
                   <img src={iconFooterRing1} alt="Icon" />
                 </div>
-                <input
-                  type="text"
-                  className="p-4 px-5 border-2 border-slate-600 bg-white rounded-md z-10 relative w-80"
-                  placeholder="Your Email"
-                />
+                <div className="relative mb-4 lg:mb-0 inline-block">
+                  <input
+                    type="text"
+                    className="p-4 pl-14 px-5 border-2 border-slate-600 bg-white rounded-md z-10 relative w-[400px] text-xl plaholder:opacity-70"
+                    placeholder="Your Email"
+                  />
+                  <img
+                    src={iconSubscritEnvelope}
+                    className="w-[26px] top-5 left-4 absolute z-20 opacity-60"
+                    alt=""
+                  />
+                </div>
               </div>
               <div className="flex-item lg:pl-6">
                 <button
@@ -372,7 +380,7 @@ function FrontPage() {
                     color: "#fff",
                     backgroundColor: "#ffad61",
                   }}
-                  className="px-7 py-4 bg-transparent font-bold"
+                  className="px-12 py-4 bg-transparent font-bold"
                 >
                   Subscribe
                 </button>
