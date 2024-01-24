@@ -1,3 +1,5 @@
+import { Logo } from "../components";
+
 import iconSquare from "../assets/images/icon-square.png";
 import iconGlass from "../assets/images/icon-glass.png";
 import iconPyramid from "../assets/images/icon-pyramid.png";
@@ -24,15 +26,15 @@ function FrontPage() {
         <section className="bg-black-900">
           <div className="lg:w-5/6 mx-auto">
             <header className="flex justify-center items-center text-black p-3 text-white">
-              <div className="flex flex-1 justify-start font-bold tracking-wide">
-                AGENCY
+              <div className="flex flex-1 justify-start">
+                <Logo />
               </div>
               <nav className="flex-1 hidden lg:block">
                 <ul className="flex justify-center font-bold text-white">
                   <li>
                     <a
                       href="#"
-                      className="inline-block p-3 font-bold text-white"
+                      className="inline-block p-3 font-bold text-white hover:text-white hover:opacity-70"
                     >
                       Home
                     </a>
@@ -40,7 +42,7 @@ function FrontPage() {
                   <li>
                     <a
                       href="#"
-                      className="inline-block p-3 font-bold text-white"
+                      className="inline-block p-3 font-bold text-white hover:text-white hover:opacity-70"
                     >
                       About
                     </a>
@@ -48,7 +50,7 @@ function FrontPage() {
                   <li>
                     <a
                       href="#"
-                      className="inline-block p-3 font-bold text-white"
+                      className="inline-block p-3 font-bold text-white hover:text-white hover:opacity-70"
                     >
                       Service
                     </a>
@@ -56,7 +58,7 @@ function FrontPage() {
                   <li>
                     <a
                       href="#"
-                      className="inline-block p-3 font-bold text-white"
+                      className="inline-block p-3 font-bold text-white hover:text-white hover:opacity-70"
                     >
                       Testimonial
                     </a>
@@ -382,34 +384,46 @@ function FrontPage() {
         <footer className="bg-black-900">
           <div className=" flex flex-col lg:w-5/6 lg:mx-auto lg:flex-row py-12">
             <div className="flex-1 p-4 px-6 lg:text-left text-center">
-              Agency
+              <Logo />
             </div>
             <div className="flex-1 flex items-center justify-center">
               <ul className="flex m-0 p-0 text-center">
                 <li className="flex-item">
-                  <a href="#" className="inline-block p-4 px-6">
+                  <a
+                    href="#"
+                    className="inline-block p-4 px-6 text-white hover:text-white hover:opacity-60"
+                  >
                     Home
                   </a>
                 </li>
                 <li className="flex-item">
-                  <a href="#" className="inline-block p-4 px-6">
+                  <a
+                    href="#"
+                    className="inline-block p-4 px-6 text-white hover:text-white hover:opacity-60"
+                  >
                     About
                   </a>
                 </li>
                 <li className="flex-item">
-                  <a href="#" className="inline-block p-4 px-6">
+                  <a
+                    href="#"
+                    className="inline-block p-4 px-6 text-white hover:text-white hover:opacity-60"
+                  >
                     Service
                   </a>
                 </li>
                 <li className="flex-item">
-                  <a href="#" className="inline-block p-4 px-6">
+                  <a
+                    href="#"
+                    className="inline-block p-4 px-6 text-white hover:text-white hover:opacity-60"
+                  >
                     Testimonial
                   </a>
                 </li>
               </ul>
             </div>
             <div className="flex-1 p-4 px-6 lg:text-right text-center">
-              © 2020 Agency, All Rights Reserved.
+              © {new Date().getFullYear()} Agency, All Rights Reserved.
             </div>
           </div>
         </footer>
