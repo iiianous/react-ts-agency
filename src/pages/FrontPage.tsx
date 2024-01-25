@@ -172,9 +172,9 @@ function FrontPage() {
             </div>
             <div className="lg:w-1/2 flex flex-items p-10 flex-wrap">
               <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
-                <img className="mb-5" src={iconSquare} alt="" />
+                <img className="mb-5" src={iconSquare} alt="Content Strategy" />
                 <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
-                  Content Strategry
+                  Content Strategy
                 </h3>
                 <p>
                   All our content marketing service packages include a custom
@@ -182,9 +182,13 @@ function FrontPage() {
                 </p>
               </div>
               <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
-                <img className="mb-5" src={iconPyramid} alt="" />
+                <img
+                  className="mb-5"
+                  src={iconPyramid}
+                  alt="Content Development"
+                />
                 <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
-                  Content Strategry
+                  Content Development
                 </h3>
                 <p>
                   All our content marketing service packages include a custom
@@ -192,9 +196,13 @@ function FrontPage() {
                 </p>
               </div>
               <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
-                <img className="mb-5" src={iconWoolBall} alt="" />
+                <img
+                  className="mb-5"
+                  src={iconWoolBall}
+                  alt="Content Creation"
+                />
                 <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
-                  Content Strategry
+                  Content Creation
                 </h3>
                 <p>
                   All our content marketing service packages include a custom
@@ -202,9 +210,13 @@ function FrontPage() {
                 </p>
               </div>
               <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
-                <img className="mb-5" src={iconGlass} alt="" />
+                <img
+                  className="mb-5"
+                  src={iconGlass}
+                  alt="Content Optimization"
+                />
                 <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
-                  Content Strategry
+                  Content Optimization
                 </h3>
                 <p>
                   All our content marketing service packages include a custom
@@ -244,7 +256,7 @@ function FrontPage() {
                   <img
                     className="rounded-full text-center inline-block"
                     src="https://fakeimg.pl/40x40"
-                    alt=""
+                    alt="Mr. Mostar Profile"
                   />
                 </div>
                 <div
@@ -264,7 +276,7 @@ function FrontPage() {
                   <img
                     className="rounded-full text-center inline-block"
                     src="https://fakeimg.pl/40x40"
-                    alt=""
+                    alt="Mr. Mostar Profile"
                   />
                 </div>
                 <div
@@ -284,7 +296,7 @@ function FrontPage() {
                   <img
                     className="rounded-full text-center inline-block"
                     src="https://fakeimg.pl/40x40"
-                    alt=""
+                    alt="Mr. Mostar Profile"
                   />
                 </div>
                 <div
