@@ -1,4 +1,4 @@
-import { Logo } from "../components";
+import { Logo, SectionReview } from "../components";
 
 import iconSquare from "../assets/images/icon-square.png";
 import iconGlass from "../assets/images/icon-glass.png";
@@ -17,7 +17,6 @@ import iconHeroPyramid from "../assets/images/icon-hero-pyramid.png";
 import iconHeroAdd from "../assets/images/icon-hero-add.png";
 
 import iconHeroHamburgerMenu from "../assets/images/icon-hamburger-menu.svg";
-import iconReviewArrow from "../assets/images/icon-arrow.svg";
 import iconSubscritEnvelope from "../assets/images/icon-envelope.svg";
 
 function FrontPage() {
@@ -227,103 +226,7 @@ function FrontPage() {
           </div>
         </section>
 
-        <section className="bg-black-900 py-6">
-          <div className="pb-6">
-            <p
-              style={{ color: "#FFAD60", letterSpacing: "3px" }}
-              className="mb-10 uppercase tracking-widest"
-            >
-              Testimonials
-            </p>
-            <h3 className="text-3xl text-white font-bold mb-6">
-              Our Client Reviews
-            </h3>
-          </div>
-          <div className="lg:w-5/6 mx-auto flex">
-            <div className="flex justify-center items-center">
-              <div className="w-[50px] h-[50px] cursor-pointer top-4 relative">
-                <img
-                  className="rounded-full bg-white p-2"
-                  width="40"
-                  src={iconReviewArrow}
-                  alt="Previous"
-                />
-              </div>
-            </div>
-            <div className="flex flex-1 flex-col lg:flex-row">
-              <div className="lg:w-1/3 mb-2 lg:mb-6 items-center justify-center relative">
-                <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
-                  <img
-                    className="rounded-full text-center inline-block"
-                    src="https://fakeimg.pl/40x40"
-                    alt="Mr. Mostar Profile"
-                  />
-                </div>
-                <div
-                  style={{ borderRadius: "15px" }}
-                  className="p-8 text-center mx-2 bg-white mx-6 relative"
-                >
-                  <p className="font-bold text-gray-900">Mr. Mostar</p>
-                  <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                  <p className="text-gray-700">
-                    "Than you for realizing the idea and highly recommended it
-                    for those of you who want to create a system."
-                  </p>
-                </div>
-              </div>
-              <div className="lg:w-1/3 mb-2 lg:mb-6 items-center justify-center relative">
-                <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
-                  <img
-                    className="rounded-full text-center inline-block"
-                    src="https://fakeimg.pl/40x40"
-                    alt="Mr. Mostar Profile"
-                  />
-                </div>
-                <div
-                  style={{ borderRadius: "15px" }}
-                  className="p-8 text-center mx-2 bg-white mx-6 relative"
-                >
-                  <p className="font-bold text-gray-900">Mr. Mostar</p>
-                  <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                  <p className="text-gray-700">
-                    "Than you for realizing the idea and highly recommended it
-                    for those of you who want to create a system."
-                  </p>
-                </div>
-              </div>
-              <div className="lg:w-1/3 mb-2 lg:mb-6 items-center justify-center relative">
-                <div className="rounded-full bg-white inline-block p-2 relative -bottom-7 z-10">
-                  <img
-                    className="rounded-full text-center inline-block"
-                    src="https://fakeimg.pl/40x40"
-                    alt="Mr. Mostar Profile"
-                  />
-                </div>
-                <div
-                  style={{ borderRadius: "15px" }}
-                  className="p-8 text-center mx-2 bg-white mx-6 relative"
-                >
-                  <p className="font-bold text-gray-900">Mr. Mostar</p>
-                  <p className="text-sm mb-6 text-gray-400">Retail Company</p>
-                  <p className="text-gray-700">
-                    "Than you for realizing the idea and highly recommended it
-                    for those of you who want to create a system."
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="w-[50px] h-[50px] cursor-pointer top-4 relative">
-                <img
-                  className="rounded-full bg-white p-2 relative rotate-180"
-                  width="40"
-                  src={iconReviewArrow}
-                  alt="Next"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <SectionReview />
 
         <section className="bg-black-900 flex flex-col items-center py-12">
           <div

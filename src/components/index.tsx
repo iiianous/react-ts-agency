@@ -1,3 +1,4 @@
 import Logo from "./Logo";
+import SectionReview from "./SectionReview";
 
-export { Logo };
+export { Logo, SectionReview };
