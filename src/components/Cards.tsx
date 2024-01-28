@@ -1,33 +1,8 @@
 import { createRef, useEffect } from "react";
 
-function Cards() {
-  const reviewData = [
-    {
-      id: 111,
-      fullname: "Mr. Mostar",
-      imgUrl: "https://fakeimg.pl/40x40",
-      company: "Retail Company",
-      review:
-        "Than you for realizing the idea and highly recommended it for those of you who want to create a system.",
-    },
-    {
-      id: 115,
-      fullname: "Mr. Mostar",
-      imgUrl: "https://fakeimg.pl/40x40",
-      company: "Retail Company",
-      review:
-        "Than you for realizing the idea and highly recommended it for those of you who want to create a system.",
-    },
-    {
-      id: 116,
-      fullname: "Mr. Mostar",
-      imgUrl: "https://fakeimg.pl/40x40",
-      company: "Retail Company",
-      review:
-        "Than you for realizing the idea and highly recommended it for those of you who want to create a system.",
-    },
-  ];
+import reviewData from "../data/user-reviews.json"
 
+function Cards() {
   const cardsWrapperRef = createRef<HTMLDivElement>();
   const itemCardWrapperRef = createRef<HTMLDivElement>();
 
