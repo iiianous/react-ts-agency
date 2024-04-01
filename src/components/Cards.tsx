@@ -21,9 +21,18 @@ function Cards() {
 
       const itemCardWidth = itemCard.clientWidth;
       const itemCardHeight = itemCard.clientHeight;
+
       console.log("wrapper", { width, height });
       console.log("item card", { itemCardWidth, itemCardHeight });
+
+      console.log("set items wrapper", setItemsWrapper(itemCardWidth));
     };
+
+    const setItemsWrapper = (itemCardWidth: any) => {
+      return itemCard.length * itemCardWidth;
+    }
+
+    console.log("itemCard", itemCard);
 
     cardsWrapper.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);

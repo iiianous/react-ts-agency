@@ -22,7 +22,7 @@ import iconSubscritEnvelope from "../assets/images/icon-envelope.svg";
 function FrontPage() {
   return (
     <>
-      <div className="h-full w-full mx-auto p-2 m-0">
+      <div className="h-full w-full mx-auto p-2 m-0 overflow-x-hidden overflow-y-auto">
         <section className="bg-black-900">
           <div className="lg:w-5/6 mx-auto">
             <header className="flex justify-center items-center text-black p-3 text-white">
@@ -119,26 +119,28 @@ function FrontPage() {
           </div>
         </section>
 
-        {/* <section className="bg-black-900 py-72">
-          <div
-            style={{
-              // background: "rgb(255,173,97)",
-              background:
-                "radial-gradient(circle, rgba(255,173,97,1) 0%, rgba(29,27,27,1) 100%)",
-            }}
-          ></div>
-          <h1 className="text-8xl">Testing</h1>
-        </section> */}
-
         <section className="bg-black-900 py-12">
           <div className="lg:w-5/6 lg:mx-auto flex justify-center items-center flex-col lg:flex-row">
             <div className="lg:w-1/2 pb-16">
-              <h2 className="text-4xl lg:text-left font-bold">
+              <h2 className="text-5xl lg:text-left font-bold relative">
                 Why should choose us?
+                <div
+                  className="absolute"
+                  style={{
+                    // background: "rgb(77,58,41)",
+                    background:
+                      "radial-gradient(circle, rgba(77,60,43,1) 0%, rgba(37,37,37,0) 70%)",
+                    height: "1000px",
+                    width: "1000px",
+                    zIndex: "-1",
+                    left: "-600px",
+                    top: "-450px",
+                  }}
+                ></div>
               </h2>
             </div>
             <div className="lg:w-1/2 lg:text-left pb-16">
-              <p className="lg:w-1/2 ml-auto">
+              <p className="lg:w-1/2 ml-auto text-xl">
                 Let's see what makes you have to choose us, it's all in this
                 video
               </p>
@@ -148,7 +150,7 @@ function FrontPage() {
             <div className="w-5/6">
               <img
                 className="inline-block rounded-md"
-                src="https://fakeimg.pl/1400x720"
+                src="https://fakeimg.pl/1600x720"
                 alt=""
               />
             </div>
@@ -158,10 +160,10 @@ function FrontPage() {
         <section className="bg-black-900 py-6">
           <div className="lg:w-5/6 lg:mx-auto flex justify-center items-start flex-col lg:flex-row">
             <div className="lg:w-1/2 flex-items p-10 text-left">
-              <h2 className="text-4xl font-bold mb-10 lg:text-left text-white">
+              <h2 className="text-5xl font-bold mb-10 lg:text-left text-white relative">
                 What services do we offer?
               </h2>
-              <p className="mb-10">
+              <p className="mb-10 text-xl">
                 These are some of the services that you will get if you
                 cooperate with us, of course ther are many more.
               </p>
@@ -169,10 +171,13 @@ function FrontPage() {
                 Sell More
               </a>
             </div>
-            <div className="lg:w-1/2 flex flex-items p-10 flex-wrap">
+            <div className="lg:w-1/2 flex flex-items p-10 flex-wrap relative">
               <div className="text-left w-1/2 mb-16 lg:pl-5 xl:pl-10">
                 <img className="mb-5" src={iconSquare} alt="Content Strategy" />
-                <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
+                <h3
+                  style={{ color: "#FFAD60" }}
+                  className="mb-4 font-bold text-xl"
+                >
                   Content Strategy
                 </h3>
                 <p>
@@ -186,7 +191,10 @@ function FrontPage() {
                   src={iconPyramid}
                   alt="Content Development"
                 />
-                <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
+                <h3
+                  style={{ color: "#FFAD60" }}
+                  className="mb-4 font-bold  text-xl"
+                >
                   Content Development
                 </h3>
                 <p>
@@ -200,7 +208,10 @@ function FrontPage() {
                   src={iconWoolBall}
                   alt="Content Creation"
                 />
-                <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
+                <h3
+                  style={{ color: "#FFAD60" }}
+                  className="mb-4 font-bold  text-xl"
+                >
                   Content Creation
                 </h3>
                 <p>
@@ -214,7 +225,10 @@ function FrontPage() {
                   src={iconGlass}
                   alt="Content Optimization"
                 />
-                <h3 style={{ color: "#FFAD60" }} className="mb-4 font-bold">
+                <h3
+                  style={{ color: "#FFAD60" }}
+                  className="mb-4 font-bold text-xl"
+                >
                   Content Optimization
                 </h3>
                 <p>
@@ -222,6 +236,20 @@ function FrontPage() {
                   content strategy.
                 </p>
               </div>
+
+              <div
+                className="absolute"
+                style={{
+                  // background: "rgb(77,58,41)",
+                  background:
+                    "radial-gradient(circle, rgba(40,34,74,1) 0%, rgba(37,37,37,0) 55%)",
+                  height: "1000px",
+                  width: "1000px",
+                  zIndex: "-1",
+                  left: "-230px",
+                  top: "-260px",
+                }}
+              ></div>
             </div>
           </div>
         </section>
