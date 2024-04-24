@@ -256,7 +256,7 @@ function FrontPage() {
 
         <SectionReview />
 
-        <section className="bg-black-900 flex flex-col items-center py-12">
+        <section className="bg-black-900 flex flex-col items-center py-24">
           <div
             style={{ borderTopLeftRadius: "105px" }}
             className="lg:w-5/6 lg:mx-auto bg-white text-black py-24 rounded-lg relative"
