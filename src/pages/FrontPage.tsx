@@ -83,7 +83,7 @@ function FrontPage() {
               </div>
             </header>
             <div
-              aria-aria-label="hero"
+              aria-label="hero"
               className="py-32 justify-center items-center relative"
             >
               <div className="text-center relative">

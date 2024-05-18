@@ -1,8 +1,7 @@
-import iconReviewArrow from "../assets/images/icon-arrow.svg";
 import iconSquareDots from "../assets/images/icon-square-dots.png";
 import iconCurly from "../assets/images/icon-curly.png";
 
-import Cards from "./Cards";
+import CardWrapper from "./CardWrapper";
 
 function SectionReview() {
   return (
@@ -24,29 +23,7 @@ function SectionReview() {
           <img src={iconCurly} alt="Icon" />
         </div>
       </div>
-      <div className="lg:w-5/6 mx-auto flex">
-        <div className="flex justify-center items-center">
-          <div className="w-[50px] h-[50px] cursor-pointer top-4 relative">
-            <img
-              className="rounded-full bg-white p-2"
-              width="40"
-              src={iconReviewArrow}
-              alt="Previous"
-            />
-          </div>
-        </div>
-        <Cards />
-        <div className="flex justify-center items-center">
-          <div className="w-[50px] h-[50px] cursor-pointer top-4 relative">
-            <img
-              className="rounded-full bg-white p-2 relative rotate-180"
-              width="40"
-              src={iconReviewArrow}
-              alt="Next"
-            />
-          </div>
-        </div>
-      </div>
+      <CardWrapper />
     </section>
   );
 }

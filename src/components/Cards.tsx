@@ -1,10 +1,13 @@
-import { createRef, useEffect } from "react";
+import { createRef, useEffect, useState } from "react";
 
-import reviewData from "../data/user-reviews.json"
+import reviewData from "../data/user-reviews.json";
 
 function Cards() {
   const cardsWrapperRef = createRef<HTMLDivElement>();
   const itemCardWrapperRef = createRef<HTMLDivElement>();
+
+  const [cardWidth, setCardWidth] = useState(350);
+  const [cardWrapperWidth, setCardWrapperWidth] = useState(1400);
 
   useEffect(() => {
     const cardsWrapper: any = cardsWrapperRef.current;
@@ -30,7 +33,7 @@ function Cards() {
 
     const setItemsWrapper = (itemCardWidth: any) => {
       return itemCard.length * itemCardWidth;
-    }
+    };
 
     console.log("itemCard", itemCard);
 
@@ -41,13 +44,18 @@ function Cards() {
   return (
     <>
       <div
-        className="flex flex-1 flex-col lg:flex-row flex-wrap"
+        // className="flex flex-1 flex-col lg:flex-row flex-wrap"
+        className="flex flex-1 flex-row"
+        style={{ width: cardWrapperWidth }}
         ref={cardsWrapperRef}
+        data-name="Cards"
       >
         {reviewData.length &&
           reviewData.map((item, indx) => (
             <div
               className="lg:w-1/3 mb-2 lg:mb-6 items-center justify-center relative"
+              // className="mb-2 lg:mb-6 items-center justify-center relative"
+              data-style={{ width: cardWidth }}
               ref={itemCardWrapperRef}
               key={indx}
             >
