@@ -1,4 +1,4 @@
-import { createRef, useEffect, useState } from "react";
+import { createRef, useEffect } from "react";
 
 import reviewData from "../data/user-reviews.json";
 
@@ -6,8 +6,8 @@ function Cards() {
   const cardsWrapperRef = createRef<HTMLDivElement>();
   const itemCardWrapperRef = createRef<HTMLDivElement>();
 
-  const [cardWidth, setCardWidth] = useState(350);
-  const [cardWrapperWidth, setCardWrapperWidth] = useState(1400);
+  // const [cardWidth, setCardWidth] = useState(350);
+  // const [1400, set1400] = useState(1400);
 
   useEffect(() => {
     const cardsWrapper: any = cardsWrapperRef.current;
@@ -46,7 +46,7 @@ function Cards() {
       <div
         // className="flex flex-1 flex-col lg:flex-row flex-wrap"
         className="flex flex-1 flex-row"
-        style={{ width: cardWrapperWidth }}
+        style={{ width: 1400 }}
         ref={cardsWrapperRef}
         data-name="Cards"
       >
@@ -55,7 +55,7 @@ function Cards() {
             <div
               className="lg:w-1/3 mb-2 lg:mb-6 items-center justify-center relative"
               // className="mb-2 lg:mb-6 items-center justify-center relative"
-              data-style={{ width: cardWidth }}
+              data-style={{ width: 350 }}
               ref={itemCardWrapperRef}
               key={indx}
             >
