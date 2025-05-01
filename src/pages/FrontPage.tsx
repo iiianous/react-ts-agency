@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Logo, SectionReview } from "../components";
 
 import iconSquare from "../assets/images/icon-square.png";
@@ -10,6 +11,8 @@ import iconFooterRing from "../assets/images/icon-footer-ring.png";
 import iconFooterRing1 from "../assets/images/icon-footer-ring-1.png";
 import iconFooterRing2 from "../assets/images/icon-footer-ring-2.png";
 import iconPlus from "../assets/images/icon-plus.png";
+import videoThumb from "../assets/images/video-1-thumb.png";
+import videoNature from "../assets/videos/video-nature.mp4";
 
 import iconHeroZigzag from "../assets/images/icon-hero-zigzag.png";
 import iconHeroRing from "../assets/images/icon-hero-ring.png";
@@ -20,6 +23,8 @@ import iconHeroHamburgerMenu from "../assets/images/icon-hamburger-menu.svg";
 import iconSubscritEnvelope from "../assets/images/icon-envelope.svg";
 
 function FrontPage() {
+  const videoRef = useRef(null);
+
   return (
     <>
       <div className="h-full w-full mx-auto p-2 m-0 overflow-x-hidden overflow-y-auto">
@@ -147,12 +152,17 @@ function FrontPage() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="w-5/6">
-              <img
-                className="inline-block rounded-md"
-                src="https://fakeimg.pl/1600x720"
-                alt=""
-              />
+            <div className="w-5/6 video-container">
+              <video
+                ref={videoRef}
+                src={videoNature}
+                controls
+                width="100%"
+                poster={videoThumb}
+              >
+                <source src={videoNature} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </section>
